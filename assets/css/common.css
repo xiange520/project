@@ -1,0 +1,262 @@
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*页面底部内容 start*/
+.footer {
+	height: 502px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	color: #c2c2c2;
+	background-color: #3c3c3c; 
+}
+
+.footer .foot-container {
+	width: 1000px;
+	height: 502px;
+	margin: 0 auto;
+}
+
+/*第一块内容 info*/
+.footer .foot-info {
+	position: relative;
+	width: 984px;
+	height: 262px;
+	padding: 30px 8px 40px;
+	border-bottom: 1px solid #575a5b;
+}
+
+.footer .foot-info dt {
+	height: 30px;
+	font-size: 14px;
+}
+
+.footer .foot-info dd {
+	font-size: 12px;
+	height: 22px;
+}
+
+.footer .foot-info .num {
+	float: left;
+	width: 200px;
+	height: 162px;
+	margin-right: 68px;
+}
+
+.footer .foot-info .num dd span {
+	color: #ff9d00;
+}
+
+.footer .foot-info .num dd  a {
+	color: #ff9d00;
+}
+
+/*第二块内容 aboutus*/
+.footer .foot-info .aboutus {
+	float: left;
+	width: 128px;
+	height: 162px;
+	margin-right: 85px;
+}
+
+.footer .foot-info .aboutus a {
+	color: #c2c2c2;
+}
+
+.footer .foot-info .aboutus a:not(.join):hover {
+	color: #fff;
+}
+
+.footer .foot-info .aboutus .join {
+	color: #ff9d00;
+}
+
+/*第三块内容 service*/
+
+.footer .foot-info .service {
+	float: left;
+	width: 135px;
+	height: 162px;
+}
+
+.footer .foot-info .service a {
+	color: #c2c2c2;
+}
+
+.footer .foot-info .service dt {
+	margin-left: 40px;
+}
+
+.footer .foot-info .service .ser-list {
+	width: 170px;
+	height: 110px;
+	margin-top: -4px;
+}
+
+.footer .foot-info .service dd:first-of-type {
+	height: 110px;
+}
+
+.footer .foot-info .service .ser-list li {
+	float: left;
+	width: 85px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.footer .foot-info .service .ser-list li a:hover {
+	color: #fff;
+}
+
+.footer .foot-info .service dd:last-child {
+	line-height: 22px;
+}
+
+.footer .foot-info .service dd:last-child a {
+	color: #ff9d00;
+}
+/*第四块内容 code*/
+.footer .foot-info .code {
+	float: right;
+	padding-top: 22px;
+}
+
+.footer .foot-info .code dd {
+	float: right;
+	margin-left: 30px;
+}
+
+.footer .foot-info .code p {
+	height: 32px;
+	margin-top: 8px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*第五块内容 slogan*/
+.footer .foot-info .slogan {
+	position: absolute;
+	top: 187px;
+	left: 0;
+	height: 75px;
+	width: 100%;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.footer .foot-info .slogan h3 {
+	display: inline-block;
+	height: 30px;
+}
+
+.footer .foot-info .slogan p {
+	height: 35px;
+	padding: 5px 0;
+}
+
+.footer .foot-info .slogan a {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.footer .foot-info .slogan i {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url(../images/mfw-footer-sprite5.png) no-repeat; 
+}
+
+.footer .foot-info .slogan .tencent {
+	background-position: -30px 0; 
+}
+
+/*中间块a链接*/
+.footer .foot-link {
+	height: 65px;
+	line-height: 1.8;
+	padding: 17px 0 17px 8px;
+	font-size: 0;
+	border-bottom: 1px solid #575a5b;
+}
+
+.footer .foot-link a {
+	display: inline-block;
+	color: #c2c2c2;
+	font-size: 12px;
+	margin-right: 12px;
+}
+
+.footer .foot-link a:hover {
+	color: #fff;
+}
+
+/*第三块内容*/
+.footer .foot-copyright {
+	height: 44px;
+	padding: 12px 0;
+}
+
+.footer .foot-copyright a {
+	display: inline-block;
+}
+
+.footer .foot-copyright .mfw-logo {
+	float: left;
+	width: 136px;
+	height: 39px;
+	margin-right: 20px;
+	background: url('../images/mfw-footer-sprite5.png') no-repeat 0 -30px;  
+}
+
+.footer .foot-copyright p {
+	float: left;
+	height: 22px;
+	width: 500px;
+	line-height: 22px;
+	font-size: 12px;
+}
+
+.footer .foot-copyright a {
+	color: #c2c2c2;
+}
+
+.footer .foot-copyright a:not(.map):hover {
+	color: #fff;
+}
+
+.footer .foot-copyright .num {
+	color: #ff9d00;
+}
+
+.footer .foot-copyright .map {
+	color: #ff9d00;
+}
+
+.footer .foot-copyright .pic {
+	float: left;
+	width: 90px;
+	height: 30px;
+	margin-top: -16px;
+	margin-right: 10px;
+	background: url('../images/mfw-footer-sprite5.png') no-repeat;
+}
+
+.footer .foot-copyright .a {
+	margin-left: 40px;
+	background-position: 0 -70px; 
+}
+
+.footer .foot-copyright .b {
+	background-position: 0 -110px; 
+}
+
+.footer .foot-copyright .c {
+	background-position: 0 -150px; 
+}
+/*页面底部内容 end*/

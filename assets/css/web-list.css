@@ -1,0 +1,208 @@
+@charset "UTF-8";
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*页面顶部 start*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1.31481rem;
+  background: #fff url("../images/web/list/line1.png") 0 bottom repeat-x; }
+
+.header .logo {
+  display: inline-block;
+  width: 2.77778rem;
+  height: 0.74074rem;
+  margin-left: 0.31481rem;
+  background: url(../images/web/list/logo204.png) no-repeat;
+  background-size: 2.77778rem 0.74074rem; }
+
+.header .header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 0.40741rem;
+  font-size: 0.42593rem; }
+
+.header .header-nav .official {
+  color: #ff9d00; }
+
+.header .header-nav .split {
+  display: inline-block;
+  width: 0.03704rem;
+  height: 0.41667rem;
+  margin: 0 0.37037rem;
+  background-color: #efefef; }
+
+.header .header-nav .search {
+  display: inline-block;
+  width: 0.55556rem;
+  height: 0.55556rem;
+  background: url("../images/web/list/i_head5.png") no-repeat -0.41667rem -1.80556rem;
+  background-size: 2.77778rem 8.33333rem; }
+
+/*页面顶部 end*/
+/*搜索栏 start*/
+.search-des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.22222rem;
+  height: 0.72222rem;
+  margin: 0.27778rem auto;
+  color: #696969;
+  background-color: #f2f2f2; }
+
+.search-des .icon-des {
+  display: inline-block;
+  width: 0.37037rem;
+  height: 0.37037rem;
+  margin-right: 0.22222rem;
+  background: url("../images/web/list/i_search.png") no-repeat;
+  background-size: 0.37037rem 0.37037rem; }
+
+/*搜索栏 end*/
+/*图片栏 start*/
+.image {
+  position: relative;
+  width: 100%;
+  height: 4rem; }
+
+.image .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.image .img-desc {
+  display: block;
+  position: absolute;
+  bottom: 0.46296rem;
+  left: 0.40741rem;
+  color: #fff;
+  font-size: 0.46296rem; }
+
+.image .img-desc .skip {
+  display: inline-block;
+  width: 0.33333rem;
+  height: 0.53704rem;
+  margin-left: 0.83333rem;
+  vertical-align: middle;
+  background: url("../images/web/list/i_index.png") no-repeat;
+  background-size: 2.08333rem 1.66667rem; }
+
+/*图片栏 end*/
+/*主体内容 start*/
+/*热门目的地 start*/
+.main .hot {
+  padding: 0 0.38889rem;
+  border-bottom: 0.01852rem solid #e6e6e6; }
+
+.main .hot .recommend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.24074rem;
+  height: 2.51852rem;
+  margin: 0 auto;
+  border-bottom: 0.03704rem dotted #ddd; }
+
+.hot .recommend a {
+  display: block;
+  text-align: center; }
+
+.hot .recommend .recom-title {
+  color: #111;
+  font-size: 0.51852rem; }
+
+.hot .recommend .recom-title::after {
+  display: inline-block;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: -0.09259rem 0 0 0.27778rem;
+  vertical-align: middle;
+  background: url(../images/web/list/i_index.png) no-repeat 0 -0.5rem;
+  background-size: 1.87037rem 1.5rem; }
+
+.hot .recommend .recom-sub {
+  color: #999;
+  font-size: 0.37037rem;
+  margin-top: 0.18519rem; }
+
+/*热门推荐子导航 start*/
+.hot .nav {
+  position: relative;
+  height: 1.16667rem;
+  line-height: 1.16667rem;
+  font-size: 0.40741rem; }
+
+.hot .nav .swiper-slide::before {
+  position: absolute;
+  top: 0.46296rem;
+  left: -0.64815rem;
+  content: "";
+  width: 0.03704rem;
+  height: 0.27778rem;
+  background-color: #ddd; }
+
+.hot .nav a {
+  display: block;
+  color: #696969; }
+
+.hot .nav .active {
+  width: 0.90741rem;
+  height: 1.16667rem;
+  border-bottom: 0.09259rem solid #ff9d00; }
+
+.hot .nav .active a {
+  color: #ff9d00; }
+
+/*热门推荐子导航 end*/
+/*热门城市图片 start*/
+.hot .hot-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.38889rem; }
+
+.hot .hot-images a {
+  display: block;
+  flex: 1;
+  margin-bottom: 0.64815rem;
+  color: #111; }
+
+.hot .hot-images img {
+  width: 2.75926rem;
+  height: 2.27778rem; }
+
+.hot .hot-images .img-desc {
+  width: 2.75926rem;
+  margin-top: 0.14815rem;
+  text-align: center;
+  font-size: 0.37037rem; }
+
+/*热门城市图片 end*/
+/*更多内容 start*/
+.hot .showmore {
+  width: 4.55556rem;
+  height: 1.11111rem;
+  margin: 0 auto 0.66667rem;
+  line-height: 1.11111rem; }
+
+.hot .showmore a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ff9d00;
+  border-radius: 0.07407rem;
+  border: 0.03704rem solid #ff9d00; }
+
+/*更多内容 end*/
+/*热门目的地 end*/
+/*主体内容 end*/
+
+/*# sourceMappingURL=web-list.css.map */

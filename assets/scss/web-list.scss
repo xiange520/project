@@ -1,0 +1,235 @@
+@function torem($px){
+	@return $px / 108px * 1rem;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*页面顶部 start*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: torem(142px);
+	background: #fff url('../images/web/list/line1.png') 0 bottom repeat-x; 
+}
+
+.header .logo {
+	display: inline-block;
+	width: torem(300px);
+	height: torem(80px);
+	margin-left: torem(34px);
+	background: url(../images/web/list/logo204.png) no-repeat;
+	background-size: torem(300px) torem(80px); 
+}
+
+.header .header-nav {
+	display: flex;
+	align-items: center;
+	margin-right: torem(44px);
+	font-size: torem(46px);	
+}
+
+.header .header-nav .official {
+	color: #ff9d00;
+}
+
+.header .header-nav .split {
+	display: inline-block;
+	width: torem(4px);
+	height: torem(45px);
+	margin: 0 torem(40px);
+	background-color: #efefef;
+}
+
+.header .header-nav .search {
+	display: inline-block;
+	width: torem(60px);
+	height: torem(60px);
+	background: url('../images/web/list/i_head5.png') no-repeat torem(-45px) torem(-195px);
+	background-size: torem(300px) torem(900px);
+}
+/*页面顶部 end*/
+/*搜索栏 start*/
+.search-des {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: torem(996px);
+	height: torem(78px);
+	margin: torem(30px) auto;
+	color: #696969;
+	background-color: #f2f2f2;
+}
+
+.search-des .icon-des {
+	display: inline-block;
+	width: torem(40px);
+	height: torem(40px);
+	margin-right: torem(24px);
+	background: url('../images/web/list/i_search.png') no-repeat;
+	background-size: torem(40px) torem(40px); 
+}
+/*搜索栏 end*/
+/*图片栏 start*/
+.image {
+	position: relative;
+	width: 100%;
+	height: torem(432px);
+}
+
+.image .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.image .img-desc {
+	display: block;
+	position: absolute;
+	bottom: torem(50px);
+	left: torem(44px);
+	color: #fff;
+	font-size: torem(50px);
+}
+
+.image .img-desc .skip {
+	display: inline-block;
+	width: torem(36px);
+	height: torem(58px);
+	margin-left: torem(90px);
+	vertical-align: middle;
+	background: url('../images/web/list/i_index.png') no-repeat;
+	background-size: torem(225px) torem(180px);
+}
+/*图片栏 end*/
+
+/*主体内容 start*/
+/*热门目的地 start*/
+.main .hot {
+	padding: 0 torem(42px);
+	border-bottom: torem(2px) solid #e6e6e6;
+}
+
+.main .hot .recommend {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: torem(998px);
+	height: torem(272px);
+	margin: 0 auto;
+	border-bottom: torem(4px) dotted #ddd;
+}
+
+.hot .recommend a {
+	display: block;
+	text-align: center;
+}
+
+.hot .recommend .recom-title {
+	color: #111;
+	font-size: torem(56px);
+}
+
+.hot .recommend .recom-title::after {
+	display: inline-block;
+	content: "";
+	width: torem(54px);
+	height: torem(54px);
+	margin: torem(-10px) 0 0 torem(30px);
+	vertical-align: middle;
+	background: url(../images/web/list/i_index.png) no-repeat 0 torem(-54px);
+	background-size: torem(202px) torem(162px); 
+}
+
+.hot .recommend .recom-sub {
+	color: #999;
+	font-size: torem(40px);
+	margin-top: torem(20px);
+}
+
+/*热门推荐子导航 start*/
+
+.hot .nav {
+	position: relative;
+	height: torem(126px);
+	line-height: torem(126px);
+	font-size: torem(44px);
+}
+
+.hot .nav .swiper-slide::before {
+	position: absolute;
+	top: torem(50px);
+	left: torem(-70px);
+	content: "";
+	width: torem(4px);
+	height: torem(30px);
+	background-color: #ddd;
+}
+
+.hot .nav a {
+	display: block;
+	color: #696969;
+}
+
+.hot .nav .active {
+	width: torem(98px);
+	height: torem(126px);
+	border-bottom: torem(10px) solid #ff9d00;
+}
+
+.hot .nav .active a {
+	color: #ff9d00;
+}
+/*热门推荐子导航 end*/
+/*热门城市图片 start*/
+.hot .hot-images {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: torem(42px);
+}
+
+.hot .hot-images a {
+	display: block;
+	flex: 1;
+	margin-bottom: torem(70px);
+	color: #111;
+}
+
+.hot .hot-images img {
+	width: torem(298px);
+	height: torem(246px);
+}
+
+.hot .hot-images .img-desc {
+	width: torem(298px);
+	margin-top: torem(16px);
+	text-align: center;
+	font-size: torem(40px);
+}
+/*热门城市图片 end*/
+/*更多内容 start*/
+.hot .showmore {
+	width: torem(492px);
+	height: torem(120px);
+	margin: 0 auto torem(72px);
+	line-height: torem(120px);
+}
+
+.hot .showmore a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #ff9d00;
+	border-radius: torem(8px);
+	border: torem(4px) solid #ff9d00;
+}
+/*更多内容 end*/
+/*热门目的地 end*/
+/*主体内容 end*/

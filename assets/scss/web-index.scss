@@ -1,0 +1,349 @@
+@function torem($px) {
+    @return $px / 108px * 1rem;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*顶部导航*/
+.topbar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: torem(144px);
+	border-bottom: 2px solid #e5e9e5;
+}
+
+.topbar .topbar-logo {
+ 	display: inline-block;
+	width: torem(232px);
+	height: torem(64px);
+	margin-left: torem(30px);
+	background: url('../images/web/logo.png') no-repeat;
+	background-size: torem(232px) torem(64px);
+}
+
+.topbar .topbar-search {
+	display: flex;
+	align-items: center;
+	width: torem(566px);
+	height: torem(72px);
+	margin-left: torem(40px);
+	padding: 0 torem(36px);
+	border-radius: torem(50px);
+	background-color: #f7f4f6; 	
+}
+
+.topbar .topbar-search .search-input {
+	height: torem(69px);
+	width: torem(566px);
+	color: #bbb;
+	font-size: torem(36px);
+	background-color: #f7f4f6;
+}
+
+.topbar .topbar-search .icon-search {
+	font-size: torem(46px);
+	color: #bbb;
+}
+
+.topbar .login {
+	margin-left: torem(40px);
+	color: #ffa800;
+	font-size: torem(42px);
+}
+/*轮播图 start*/
+.swiper-container {
+	width: 100%;
+	font-size: 0;
+}
+
+.swiper-container img {
+	width: 100%;
+}
+
+.swiper-container .swiper-pagination {
+	display: flex;
+	width: torem(294px) !important;
+	height: torem(16px) !important;
+	left: torem(390px) !important;
+	bottom: torem(20px) !important;
+	border-radius: torem(10px) !important;
+	background-color: rgba(255,255,255,.5);
+}
+
+.swiper-container .swiper-pagination-bullet {
+	flex: 1;
+	margin: 0 !important;
+	height: torem(16px) !important;
+	border-radius: torem(10px) !important;
+	background-color: rgba(255,255,255,.5) !important;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+	background-color: #ff9d00 !important;
+}
+/*轮播图 end*/
+
+/*轮播图下子导航 start*/
+.sub-nav {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: torem(76px);
+}
+
+.sub-nav .sub {
+	flex: 1;
+	display: inline-block;
+	padding: torem(42px);
+	margin-bottom: torem(44px);
+	text-align: center;
+	font-size: torem(46px);
+}
+
+.sub-nav .sub i {
+	display: inline-block;
+	width: torem(134px);
+	height: torem(134px);
+	margin-bottom: 34px;
+	background: url('../images/web/i_nav3.png') no-repeat;
+	background-size: torem(562px) torem(280px);
+}
+
+.sub-nav .i-one {
+	color: #ff9d00;
+}
+
+.sub-nav .i-two {
+	color: #feca2b;
+}
+
+.sub-nav .i-two i {
+	background-position: 0 torem(-138px);
+}
+
+.sub-nav .i-three {
+	color: #42d6ba;
+}
+
+.sub-nav .i-three i {
+	background-position: torem(-278px) torem(-138px);
+}
+
+.sub-nav .i-four {
+	color: #f94a87;
+}
+
+.sub-nav .i-four i {
+	background-position: torem(-138px) torem(-138px);
+}
+
+.sub-nav .i-five {
+	color: #32a2f1;
+}
+
+.sub-nav .i-five i {
+	background-position: torem(-138px) 0;
+}
+
+.sub-nav .i-six {
+	color: #fd4e4e;
+}
+
+.sub-nav .i-six i {
+	background-position: torem(-278px) 0; 
+}
+
+.sub-nav .i-seven {
+	color: #acce0e;
+}
+
+.sub-nav .i-seven i {
+	background-position: torem(-420px) 0; 
+}
+
+.sub-nav .i-eight {
+	color: #b160df;
+}
+
+.sub-nav .i-eight i {
+	background-position: torem(-420px) torem(-138px); 
+}
+
+/*轮播图下子导航 end*/
+
+/*内容标题 start*/
+.content-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: torem(96px);
+	font-size: torem(46px);
+	color: #999;
+	background-color: #f8f8f8;
+}
+
+.content-title i {
+	display: inline-block;
+	width: torem(28px);
+	height: torem(28px);
+	background: url('../images/web/i_guidet.png') no-repeat;
+	background-size: torem(28px) torem(70px); 
+}
+
+.content-title .gt {
+	margin-right: 48px;
+}
+
+.content-title .lt {
+	margin-left: 48px;
+	background-position: 0 torem(-36px);
+}
+/*内容标题 end*/
+
+/*主体内容 start*/
+.content .content-list a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+
+.content .content-list li {
+	border-bottom: torem(4px) solid #f8f8f8;
+}
+
+.content .list-title {
+	margin: torem(48px) 0 0 torem(42px);
+}
+
+.content .list-title .t-desc{
+	float: left;
+	width: torem(870px);
+	font-size: torem(55px);
+	line-height: 1.5;
+}
+
+.content .list-title .tag {
+	float: right;
+	width: torem(114px);
+	margin-top: torem(22px);
+}
+
+.content .list-content {
+	display: flex;
+	margin: torem(30px) 0 torem(40px) torem(42px);
+}
+
+.content .list-content .pic {
+	width: torem(376px);
+	height: torem(260px);
+}
+
+.content .list-content .detail .diary {
+	width: torem(578px);
+	height: torem(153px);
+	margin-top: torem(8px);
+	margin-left: torem(46px);
+	color: #999;
+	font-size: torem(40px);
+	line-height: 1.3;
+}
+
+.content .list-content .detail .extra {
+	margin: torem(32px) 0 0 torem(46px);
+	color: #999;
+	font-size: torem(40px);
+}
+
+.content .list-content .detail .extra-look {
+	float: left;
+}
+/*蜂首 用户头像*/
+.content .list-content .detail .extra-user {
+	float: right;
+}
+
+.content .list-content .detail .extra-user img {
+	width: torem(60px);
+	height: torem(60px);
+	margin: torem(-2px) 0 0 torem(20px);
+	border-radius: 50%;
+	vertical-align: middle;
+}
+/*攻略 问答方框模块*/
+.content .list-content .detail .strategy {
+	float: right;
+	width: torem(110px);
+	height: torem(58px);
+	text-align: center;
+	line-height: torem(58px);
+	border: torem(4px) solid transparent;
+	border-radius: torem(10px);
+}
+/*加载中按钮*/
+.content .loading {
+	display: block;
+	width: 100%;
+	height: torem(140px);
+	margin-bottom: torem(10px);
+	line-height: torem(140px);
+	text-align: center;
+	color: #999;
+	font-size: torem(42px);
+}
+/*主体内容 end*/
+
+/*回到顶部*/
+.backtop {
+	position: fixed;
+	right: torem(50px);
+	bottom: torem(230px);
+	width: torem(110px);
+	height: torem(110px);
+	border-radius: 50%;
+	background: url('../images/web/backtop.png') no-repeat;
+	background-size: torem(110px) torem(110px); 
+}
+/*底部内容 start*/
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: torem(272px);
+	background-color: #2a282c; 
+}
+
+.footer .footer-btn {
+	display: flex;
+	height: torem(72px);
+}
+
+.footer .footer-btn .btn {
+	display: inline-block;
+	color: #929193;
+	width: torem(220px);
+	height: 100%;
+	margin: 0 torem(25px);
+	line-height: torem(72px);
+	text-align: center;
+	border-radius: torem(18px);
+	background-color: #403e42;
+}
+
+.footer .footer-btn .join {
+	color: #ff9d00;
+}
+
+.footer .copyright {
+	margin-top: torem(60px);
+	color: #575658;
+}
+/*底部内容 end*/

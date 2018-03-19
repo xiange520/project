@@ -1,0 +1,1190 @@
+
+/*顶部导航 start*/
+.header {
+	height: 58px;
+	line-height: 58px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 0 3px #d6d6d6;
+}
+
+.header .mfw-logo {
+	float: left;
+	width: 136px;
+	height: 58px;
+}
+
+.header .mfw-logo .mfw-img {
+	display: inline-block;
+	width: 136px;
+	height: 33px;
+	vertical-align: middle;
+	background: url('../images/header-small-sprites.png') no-repeat ;
+}
+	/*中间列表*/
+.header .header-nav {
+	float: left;
+	position: relative;
+	font-size: 0;
+}
+
+.header .header-nav li {
+	float: left;
+	height: 55px;
+}
+
+.header .header-nav > li:first-child {
+	margin-left: 24px;
+}
+
+.header .header-nav li > a {
+	display: inline-block;
+	height: 55px;
+	padding: 0 16px;
+	font-size: 14px;
+	color: #333;
+}
+
+.header .header-nav .special:hover {
+	border-bottom: 3px solid #ff9d00;
+}
+
+.header .header-nav .special:hover a {
+	color: #ff9d00;	
+}
+
+.header .header-nav .index {
+	height: 58px;
+	background-color: #ff9d00; 
+}
+
+.header .header-nav .index a {
+	color: #fff;
+}
+
+.header .header-nav .iconfont {
+	display: inline-block;
+	font-size: 14px;
+}
+
+/*导航栏的搜索栏*/
+.header .head-search {
+	position: relative;
+	float: left;
+	width: 130px;
+}
+
+.header .head-search .search-input {
+	position: absolute;
+	top: 14px;
+	right: 0;
+	width: 110px;
+	height: 30px;
+	padding: 0 10px;
+	border-radius: 4px;
+	background-color: #efefef; 
+	transition: width .5s ease;	
+}
+
+.header .head-search .fdj {
+	position: absolute;
+	top: 19px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	background: url('../images/header-sprites13.png') no-repeat -30px -110px;
+}
+
+.header .head-search .search-input:focus {
+	width: 368px;
+	border: 1px solid #ff9d00;
+	box-shadow: 0 0 1px #ff9d00;
+	background-color: #fff; 
+	transition: width .5s ease;	
+}
+
+.header .head-search .search-input:focus +.fdj {
+	background-position: -30px -140px; 
+}
+
+/*下拉列表 */
+.header .header-nav .slide-shop .downlist {
+	position: absolute;
+	top: 58px;
+	margin-left: -1px;
+	z-index: 99;
+	background-color: rgba(255,255,255,.95); 
+}
+
+.header .header-nav .slide-shop a {
+	margin-top: -1px;
+}
+
+.header .header-nav .shop {
+	display: none;
+	width: 140px;
+	border: 1px solid #d6d6d6;
+	border-top: 1px solid #fff;
+	padding-bottom: 10px;
+}
+
+.header .header-nav .shop .list {
+	width: 140px; 
+}
+
+.header .header-nav .shop li {
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	background: 
+}
+
+.header .header-nav .shop li:hover {
+	background-color: #d6d6d6;
+}
+
+.header .header-nav .shop li a {
+	color: #666;
+}
+
+.header .header-nav .slide-shop:hover >a{
+	color: #ff9d00;
+}
+
+.header .header-nav .slide-shop{
+	border-top: 2px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	transition: all .5s;
+}
+
+.header .header-nav .slide-shop:hover {
+	border-top-color: #ff9d00;
+	border-left-color: #d6d6d6;
+	border-right-color: #d6d6d6;
+	transition: all .5s;
+}
+
+.header .header-nav .active {
+	border-top: 2px solid #ff9d00;
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+.header .header-nav .comm {
+	left: ;
+	height: 260px;
+	width: ;
+}
+
+	/*登录注册*/
+.header .header-login {
+	float: right;
+	height: 58px;
+	font-size: 14px;
+}
+
+.header .header-login .login {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin-right: 6px;
+	vertical-align: middle;
+	background: url('../images/header-sprites13.png') no-repeat;
+}
+
+.header .header-login .weibo {
+	background-position: 0 -50px; 
+}
+
+.header .header-login .weibo:hover {
+	background-position: 0 -80px;
+}
+
+.header .header-login .qq {
+	background-position: -30px -50px; 
+}
+
+.header .header-login .qq:hover {
+	background-position: -30px -80px;
+}
+
+.header .header-login .weixin {
+	background-position: 0 -165px; 
+}
+
+.header .header-login .weixin:hover {
+	background-position: -30px -165px;
+}
+
+.header .header-login a {
+	color: #ff9d00;
+}
+
+.header .header-login a:not(.login):hover {
+	text-decoration: underline;
+}
+
+.header .header-login .split {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	margin: 0 5px;
+	vertical-align: -2px;
+	background-color: #c9c9c9;
+}
+/*顶部导航 end
+/*页面主体内容 start*/
+.main {
+	position: relative;
+	height: 20666px;
+}
+/*侧边栏 start*/
+.sidebar {
+	float: left;
+	width: 680px;
+	margin-top: 15px;
+}
+/*侧边栏最上面小索引*/
+.sidebar .sidebar-index {
+	height: 20px;
+	margin-bottom: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+}
+
+.sidebar .sidebar-index a {
+	color: #333;
+} 
+
+.sidebar .sidebar-index a:hover {
+	text-decoration: underline;;
+}
+
+.sidebar .sidebar-index span {
+	color: #ff9d00;
+}
+/*侧边栏标题*/
+.sidebar .sidebar-title {
+	height: 80px;
+	padding-bottom: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+	font-size: 30px;
+}
+/*侧边栏副标题*/
+.sidebar .sidebar-subhead {
+	height: 22px;
+	padding-top: 13px;
+	margin-bottom: 35px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #999;
+	border-top: 1px solid #e5e5e5;
+}
+
+.sidebar .sidebar-subhead .num {
+	float: left;
+	color: #333;
+}
+
+.sidebar .sidebar-subhead .num .cart {
+	display: inline-block;
+	width: 20px;
+	height: 22px;
+	vertical-align: top;
+	margin: 0 7px 0 5px;
+	background: url('../images/list_sprites7.png') no-repeat -35px -60px;
+}
+
+.sidebar .sidebar-subhead .read {
+	float: right;
+}
+
+.sidebar .sidebar-subhead .read em {
+	margin-left: 10px;
+}
+
+.sidebar .sidebar-subhead .time {
+	float: right;
+    margin-left: 30px;
+}
+
+/*用户信息*/
+.sidebar .sidebar-user {
+	position: relative;
+	height: 141px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 35px;
+	padding-top: 16px;
+	color: #333;
+}
+
+.sidebar .sidebar-user .user-img {
+	float: left;
+	margin-left: 15px;
+}
+
+.sidebar .sidebar-user .user-img a {
+	display: block;
+}
+
+.sidebar .sidebar-user .user-img img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+
+.sidebar .sidebar-user .user-info {
+	float: left;
+	width: 440px;
+	height: 99px;
+	margin-left: 22px;
+	border-right: 1px solid #e5e5e5;	
+}
+
+.sidebar .user-info .username {
+	height: 21px;
+}
+
+.sidebar .user-info .username .name {
+	color: #333;
+}
+
+.sidebar .user-info .username .name:hover {
+	text-decoration: underline;
+}
+
+.sidebar .user-info .username .sailer {
+	display: inline-block;
+	position: relative;
+	width: 84px;
+	height: 14px;
+	padding: 0 5px 0 13px;
+	margin-left: 12px;
+	line-height: 14px;
+	color: #f2912e;
+	font-size: 12px;
+	border: 1px solid #ff9d00;
+}
+
+.sidebar .user-info .username .true {
+	position: absolute;
+	top: -4px;
+	left: -10px;
+	width: 22px;
+	height: 22px;
+	background: url('../images/list_sprites7.png') no-repeat -100px -40px;
+}
+
+.sidebar .user-info .detail {
+	margin: 6px 0 8px;
+	height: 40px;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.sidebar .user-info .console {
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	font-size: 12px;
+}
+
+.sidebar .user-info .console img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin: 0 5px 0 3px;
+	vertical-align: top;
+}
+
+.sidebar .sidebar-user .user-contact {
+	float: right;
+	height: 99px;
+}
+
+.sidebar .sidebar-user .user-contact a {
+	display: block;
+}
+
+.sidebar .sidebar-user .user-contact .smile {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 18px 39px 0;
+	background: url('../images/list_sprites7.png') no-repeat 0 -60px;
+}
+
+.sidebar .sidebar-user .user-contact h4 {
+	height: 26px;
+	padding: 12px 0;
+	line-height: 26px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+}
+
+.sidebar .sidebar-user .user-contact:hover h4{
+	text-decoration: underline solid #ff9d00;
+}
+
+.sidebar .sidebar-user .approve {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	background-color: #f6f6f6;
+}
+
+.sidebar .sidebar-user .approve span {
+	display: inline-block;
+}
+
+.sidebar .sidebar-user .approve .iden {
+	width: 156px;
+	text-align: center;
+}
+
+.sidebar .sidebar-user .approve .phone {
+	width: 364px;
+	text-align: center;
+}
+
+.sidebar .sidebar-user .approve .money {
+	width: 150px;
+} 
+
+.sidebar .sidebar-user .approve i {
+	display: inline-block;
+	width: 21px;
+	height: 18px;
+	vertical-align: middle;
+	background: url('../images/list_sprites7.png') no-repeat -18px -43px;
+}
+
+.sidebar .sidebar-user .approve .phone i {
+	background-position: -42px -43px ; 
+} 
+
+.sidebar .sidebar-user .approve .money i {
+	background-position: -63px -43px ; 
+} 
+/*用户的描述信息*/
+.sidebar .sidebar-desc {
+	height: 78px;
+	color: #333;
+	line-height: 1.5;
+}
+
+.sidebar .sidebar-desc .marks {
+	display: inline-block;
+	width: 21px;
+	height: 18px;
+	margin-right: 13px;
+	background: url('../images/list_sprites7.png') no-repeat -72px 0;
+}
+/*一 主体描述新西兰内容*/
+.sidebar .sidebar-content {
+
+}
+/*主标题*/
+.sidebar-content .main-title {
+	height: 31px;
+	line-height: 31px;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 18px 0;
+}
+/*副标题*/
+.sidebar-content .sub-title {
+	height: 24px;
+	margin: 15px 0;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*段落p-section*/
+.sidebar-content .p-section {
+	/*height: 52px;*/
+	margin: 13px 0 28px;
+	line-height: 26px;
+	color: #666;
+	font-size: 14px;
+}
+
+.sidebar-content .p-section .season {
+	color: #333;
+	font-weight: bold;
+}
+/*有水印的图片*/
+.sidebar-content .watermark img {
+	display: block;
+	margin: 10px 0;
+}
+
+.sidebar-content .img-desc {
+	color: #999;
+	font-size: 12px;
+}
+/*鼠标移入后变颜色的详情方块 item*/
+.sidebar-content .item {
+	height: 110px;
+	padding: 9px 9px 9px 9px;
+	margin: 35px 0;
+	border: 1px solid #e5e5e5;
+}
+
+.sidebar-content .item a {
+	padding: 10px 0 10px 10px;
+	display: block;
+	height: 90px;
+}
+
+.sidebar-content .item img {
+	float: left;
+}
+
+.sidebar-content .item .item-title {
+	float: left;
+	width: 418px;
+	height: 40px;
+	margin: 10px 0 10px 20px;
+	color: #666;
+	line-height: 20px;
+}
+
+.sidebar-content .item .item-desc {
+	float: left;
+	width: 418px;
+	margin-left: 20px;
+	color: #999;
+	font-size: 12px; 
+}
+
+.sidebar-content .item .arrow {
+	float: right;
+	margin-top: -28px;
+	margin-right: 28px;
+	width: 12px;
+	height: 22px;
+	background: url('../images/list_sprites7.png') no-repeat -140px -40px;
+}
+
+.sidebar-content .item a:hover {
+	background-color: #f4f4f4;
+}
+/*tips模块*/
+.sidebar-content .tips {
+	width: 638px;
+	height: 78px;
+	padding: 15px 20px;
+	margin: 35px 0;
+	line-height: 26px;
+	font-size: 14px;
+	border: 1px solid #ffe3b7;
+	background-color: #fff5e5; 	
+}
+
+.sidebar-content .tips .tips-tips {
+	font-weight: bold;
+}
+/*主体描述新西兰内容end*/
+/*版权说明*/
+.sidebar .copyright {
+	height: 20px;
+	padding-top: 45px;
+	margin-top: 20px;
+	color: #d1d1d1;
+	text-align: center;
+	font-size: 12px;
+	background: url('../images/show/copyright.png') no-repeat;
+}
+/*整个评论界面 start*/
+.sidebar .comment {
+	height: 1022px;
+	margin-top: 85px;
+}
+/*评论输入框 start*/
+.comment .form {
+	height: 155px;
+}
+
+.comment .form .user-img {
+	float: left;
+	border-radius: 50%;
+}
+
+.comment .login {
+	float: right;
+	position: relative;
+	width: 615px;
+}
+
+.comment .login .input {
+	width: 585px;
+	height: 55px;
+	padding: 14px;
+	resize: none;
+	outline: none;
+	border: 1px solid #ffa200;
+	border-radius: 5px;
+}
+
+.comment .login .login-desc {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #999;
+	font-size: 14px;
+	background: #fff;
+}
+
+.comment .login .login-desc a {
+	color: #fc9d27;
+}
+
+.comment .login .login-desc a:hover {
+	text-decoration: underline solid #fc9d27;
+}
+
+.comment .login .btn {
+	float: right;
+	width: 114px;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: #ff9d00; 
+}
+/*评论输入框 end*/
+/*评论详细信息 start*/
+.comment .detail {
+	height: 866px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.comment .detail .number {
+	margin: 36px 0;
+	color: #333;
+	font-size: 24px;
+}
+
+.comment .detail .username li {
+	height: 80px;
+	padding: 30px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.comment .detail .username img {
+	float: left;
+	border-radius: 50%;
+}
+
+.comment .detail .username .infos {
+	float: right;
+	width: 615px;
+}
+
+.comment .detail .username .rank {
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #333;
+}
+
+.comment .detail .username .rank .level {
+	color: #eb5443;
+	margin-left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.comment .detail .username .date {
+	font-size: 12px;
+	color: #999;
+}
+
+.comment .detail .username .description {
+	height: 28px;
+	margin-top: 8px;
+	color: #666;
+	font-size: 14px;
+}
+/*页码*/
+.comment .detail .page {
+	float: right;
+	height: 25px;
+	padding: 20px 5px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #999;
+}
+
+.comment .detail .page .one {
+	display: inline-block;;
+	height: 24px;
+	width: 21px;
+	margin: 0 5px 0 12px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: #ff9d00;
+}
+/*评论详细信息 end*/
+/*整个评论界面 end*/
+/*侧边栏 end*/
+/*索引栏 start*/
+.main .catalog {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 275px;
+	height: 467px;
+	margin-top: 65px;
+	z-index: 1;
+}
+
+.main .fixedone {
+	position: fixed;
+	top: 10px;
+	margin: 0;
+} 
+
+
+/*索引栏导航 start*/
+.catalog .index-nav {
+	position: relative;
+	height: 70px;
+	margin-bottom: 10px;
+} 
+
+.catalog .index-nav > a {
+	float: left;
+	width: 68px;
+	height: 70px;
+	color: #333;
+	text-align: center;
+}
+
+.catalog .index-nav > a i {
+	display: block;
+	width: 25px;
+	height: 24px;
+	margin: 0 21.5px 10px;
+	background: url('../images/show/list_sprites01.png') no-repeat;
+}
+
+.catalog .index-nav .collect i {
+	background-position: -68px 0; 
+}
+
+.catalog .index-nav .share i {
+	background-position: -135px 0;
+}
+
+.catalog .index-nav .thumb i {
+	background-position: -204px 0;
+}
+/*隐藏的气泡浮层*/
+.catalog .index-nav .index-pop {
+	display: none;
+	position: absolute;
+	top: 70px;
+	left: 120px;
+	width: 132px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+	background: #fff;
+}
+
+.catalog .index-nav .index-pop a {
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin-right: 12px;
+	border-radius: 5px;
+	background: url('../images/show/sprite_v33.png') no-repeat;
+}
+
+.catalog .index-nav .index-pop .weibo {
+	background-color: #d84c4c;
+	background-position: -295px -569px;  
+}
+
+.catalog .index-nav .index-pop .qzone {
+	background-color: #3f8bc0;
+	background-position: -331px -569px;  
+}
+
+.catalog .index-nav .index-pop .wchat {
+	margin-right: 0;
+	background-color: #73a64f;
+	background-position: -367px -569px;  
+}
+
+/*.catalog .index-nav .share:hover + .index-pop {
+	display: block;
+}*/
+/*攻略目录*/
+.catalog .index-title {
+	height: 24px;
+	margin: 25px 0 10px;
+	padding-bottom: 6px;
+	color: #333;
+	font-size: 18px;
+}
+
+/*滚动目录 start*/
+.catalog .scroll {
+	overflow: hidden;
+	width: 255px;
+	height: 333px;
+}
+
+.catalog .scroll .scroll-box {
+	overflow: scroll;
+	width: 275px;
+	height: 353px;
+}
+
+.catalog .scroll .scroll-list {
+	width: 235px;
+	height: 645px;
+	padding-left: 17px;
+	margin-left: 4px;
+	border-left: 1px solid #d4d4d4;
+}
+
+.catalog .scroll .scroll-list .head {
+	height: 18px;
+	font-size: 14px;
+}
+
+.catalog .scroll .scroll-list li {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.catalog .scroll .scroll-list li a {
+	display: block;
+}
+
+.catalog .scroll .scroll-list li a:hover {
+	text-decoration: underline;
+}
+
+.catalog .scroll .scroll-list .head a {
+	color: #666;
+}
+
+.catalog .scroll .scroll-list .big {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.catalog .scroll .scroll-list .big a {
+	color: #333;
+}
+
+.catalog .scroll .scroll-list .big .circle {
+	position: absolute;
+	top: 4px;
+	left: -26px;
+	width: 16px;
+	height: 12px;
+	background: url('../images/list_sprites7.png') no-repeat -46px -25px;
+}
+/*滚动目录 end*/
+/*索引栏导航 end*/ 
+/*索引栏 end*/
+/*更多新西兰攻略 start*/
+.extra {
+	height: 690px;
+	padding-bottom: 100px;
+}
+/*标题*/
+.extra .extra-head {
+	height: 55px;
+	line-height: 55px;
+	color: #333;
+	font-size: 24px;
+}
+
+.extra .extra-head .lookmore {
+	float: right;
+	color: #ff8a00;
+	font-size: 14px;
+}
+
+.extra .extra-head .lookmore:hover {
+	text-decoration: underline;
+}
+/*图片列表*/
+.extra .extra-list {
+	width: 100%;
+	padding: 12px 0 67px;
+}
+
+.extra .extra-list li {
+	float: left;
+	position: relative;
+	width: 300px;
+	height: 228px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	font-size: 0;
+}
+
+.extra .extra-list .nomargin {
+	margin-right: 0;
+}
+
+.extra .extra-list .extra-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.extra .extra-list .extra-info {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 166px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+	transition: all .2s linear .1s;
+}
+
+.extra .extra-info .info-title {
+	height: 40px;
+	margin-bottom: 7px;
+	color: #333;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.extra .extra-info .info-sub {
+	height: 40px;
+	line-height: 20px;
+	color: #666;
+	font-size: 14px;
+}
+
+.extra .extra-info .info-sub .line {
+	display: inline-block;
+	width: 3px;
+	height: 12px;
+	margin-right: 7px;
+	vertical-align: -2px;
+	background-color: #ff9d00;
+}
+
+.extra .extra-list li:hover {
+	box-shadow: 0 0 15px rgba(0,0,0,.08);
+}
+
+.extra .extra-list li:hover .extra-info {
+	top: 130px;
+	height: 80px;
+	transition: all .2s linear .1s;
+}
+/*更多新西兰攻略 end*/
+/*页面主体内容 end*/
+/*返回顶部 意见反馈 二维码*/
+.fixed {
+	position: fixed;
+	bottom: 20px;
+	right: 70px;
+	width: 44px;
+	border: 1px solid #e5e5e5;
+	z-index: 28;
+}
+
+.fixed > div {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.fixed .er {
+	border: none;
+}
+
+.fixed  a {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+}
+
+.fixed span {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 43px;
+	height: 38px;
+	padding-top: 5px;
+	line-height: 1.5;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #aaa;
+	background-color: #aaa; 
+}
+
+.fixed i {
+	display: inline-block;
+	background: url('../images/header-sprites13.png') no-repeat;
+}
+
+.fixed .return i {
+	width: 21px;
+	height: 12px;
+	background-position: -60px -165px; 
+}
+
+.fixed .advice i {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background-position: -90px -165px;
+}
+
+.fixed .er i {
+	width: 19px;
+	height: 19px;
+	vertical-align: middle;
+	background-position: -120px -165px; 
+}
+
+.fixed .return:hover .top {
+	display: inline-block;
+} 
+
+.fixed .advice:hover .back {
+	display: inline-block;
+}
+
+.fixed .er:hover i {
+	background: url('../images/header-sprites13.png') no-repeat -150px -165px; 
+}
+
+.fixed .er:hover {
+	background-color: #ff9d00; 
+}
+
+.fixed img {
+	display: none;
+	position: absolute;
+	left: -310px;
+	top: -57px;
+	height: 192px;
+	width: 300px;
+	z-index: 31;
+	border: 1px solid #e5e5e5;
+}
+
+.fixed .er:hover img {
+	display: block;
+}
+
+/*意见反馈遮罩层*/
+.advicefixed {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(170,170,170,.6); 
+}
+
+.advicefixed .advice-box {
+	position: fixed;
+	top: 186.5px;
+	left: 319px;
+	width: 569px;
+	height: 277px;
+	padding: 22px 28px;
+	color: #666;
+	border-radius: 2px;
+	background-color: #fff; 
+}
+
+.advicefixed .advice-box .advice-title {
+	height: 31px;
+	font-size: 24px;
+}
+
+.advicefixed .advice-box .advice-listen {
+	height: 22px;
+	padding: 8px 0 15px 0;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.advicefixed .advice-box .advice-text {
+	display: block;
+	width: 450px;
+	height: 150px;
+	padding: 4px;
+	margin-bottom: 10px;
+	border: 1px solid #aebacd;
+	resize: none;
+}
+
+.advicefixed .advice-box .submit {
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 14px; 
+	background-color: #fdc135;
+	border-radius: 5px;
+}
+
+.advicefixed .advice-box .submit .btn {
+	color: #fff;
+}
+
+.advicefixed  .advice-box .advice-close {
+	position: absolute;
+	top: 11px;
+	right: 0;
+	width: 36px;
+	height: 26px;
+	background: url('../images/popctn_bg2.png') no-repeat 0 -280px;
+}
+
+.advicefixed  .advice-box .advice-close i {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 2px;
+	background: url('../images/popctn_bg2.png') no-repeat -40px -280px;
+	transition: all 1s ease-in-out;
+}
+
+.advicefixed  .advice-box .advice-close:hover i {
+	transform: rotate(360deg); 
+	transition: all 1s ease-in-out;
+} 
+

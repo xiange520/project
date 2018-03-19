@@ -1,0 +1,393 @@
+@function torem($px){
+	@return $px / 108px * 1rem;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container {
+	padding: 0 torem(58px);
+}
+/*页面顶部 start*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: torem(142px);
+	background: #fff url('../images/web/list/line1.png') 0 bottom repeat-x; 
+}
+
+.header .logo {
+	display: inline-block;
+	width: torem(300px);
+	height: torem(80px);
+	margin-left: torem(34px);
+	background: url(../images/web/list/logo204.png) no-repeat;
+	background-size: torem(300px) torem(80px); 
+}
+
+.header .header-nav {
+	display: flex;
+	align-items: center;
+	margin-right: torem(44px);
+	font-size: torem(46px);	
+}
+
+.header .header-nav .official {
+	color: #ff9d00;
+}
+
+.header .header-nav .split {
+	display: inline-block;
+	width: torem(4px);
+	height: torem(45px);
+	margin: 0 torem(40px);
+	background-color: #efefef;
+}
+
+.header .header-nav .search {
+	display: inline-block;
+	width: torem(60px);
+	height: torem(60px);
+	background: url('../images/web/list/i_head5.png') no-repeat torem(-45px) torem(-195px);
+	background-size: torem(300px) torem(900px);
+}
+/*页面顶部 end*/
+/*蜂首纪念 start*/
+.date {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: torem(56px) 0 torem(64px);
+	color: #008489;
+}
+
+.date .date-day {
+	position: relative;
+	margin-right: torem(40px);
+	font-size: torem(140px);
+	font-weight: bold;
+}
+
+.date .date-day::before {
+	content: "";
+	position: absolute;
+	left: torem(-20px);
+	top: torem(-6px);
+	width: torem(12px);
+	height: torem(140px);
+	background-color: #008489;
+}
+
+.date .date-day::after {
+	content: "";
+	position: absolute;
+	right: torem(-20px);
+	top: torem(-6px);
+	width: torem(12px);
+	height: torem(140px);
+	background-color: #008489;
+}
+
+.date .date-year {
+	position: relative;
+	font-size: torem(70px);
+}
+
+.date .date-year::after {
+	content: "";
+	position: absolute;
+	right: torem(-30px);
+	top: torem(-6px);
+	width: torem(12px);
+	height: torem(140px);
+	background-color: #008489;
+}
+
+.date .date-souvenir {
+	width: 100%;
+	margin-top: torem(20px);
+	text-align: center;
+	font-size: torem(90px);
+	font-weight: bold;
+}
+/*蜂首纪念 end*/
+/*顶部图片 start*/
+.picture {
+	position: relative;
+	width: 100%;
+	height: torem(648px);
+}
+
+.picture img {
+	position: absolute;
+	height: torem(648px);
+}
+
+.picture .pic-icon {
+	position: absolute;
+	top: torem(52px);
+	right: torem(100px);
+}
+
+.picture .pic-icon i {
+	display: inline-block;
+	width: torem(65px);
+	height: torem(65px);
+	background: pink url('../images/web/show/note_sprites2.png') no-repeat;
+}
+
+.picture .pic-icon .collect {
+	margin-right: torem(62px);
+	background-position: 0 torem(-260px); 
+}
+/*顶部图片 end*/
+/*指南内容 start*/
+.guide {
+	padding: torem(72px) 0;
+}
+/*标题*/
+.guide .guide-header {
+	color: #474747;
+	font-size: torem(86px);
+	font-weight: bold;
+	line-height: 1.2;
+}
+/*日期*/
+.guide .guide-meta {
+	margin: torem(60px) 0;
+	color: #474747;
+}
+
+.guide .meta-date {
+	margin-right: torem(40px);
+}
+/*作者信息 start*/
+.guide .guide-author {
+	color: #696969;
+}
+
+.guide .author-img {
+	float: left;
+	display: inline-block;
+	margin-right: torem(30px);
+}
+
+.guide .author-img img {
+	width: torem(176px);
+	height: torem(176px);
+	border-radius: 50%;
+}
+
+.guide .author-desc {
+	float: left;
+	margin-top: torem(30px);
+}
+
+.guide .author-desc .desc-name {
+	font-size: torem(46px); 
+}
+
+.guide .author-desc .level {
+	position: relative;
+	display: inline-block;
+	margin-left: torem(10px);
+	padding: 0 torem(4px) torem(4px) torem(4px);
+	color: #474747;
+	font-size: torem(36px);
+	border: torem(4px) solid #474747;
+	border-radius: torem(10px);
+	vertical-align: top; 
+}
+
+.guide .author-desc .level::after {
+	position: absolute;
+	left: torem(4px);
+	top: torem(4px);
+	content: "";
+	width: torem(80px);
+	height: torem(32px);
+	z-index: -1;
+	background-color: #ffdb26;
+}
+
+.guide .author-desc .desc-fans {
+	margin-top: torem(25px);
+}
+/*大理*/
+.guide .guide-author .author-city {
+	position: relative;
+	top: torem(25px);
+	float: right;
+	font-size: torem(100px);
+}
+
+.guide .guide-author .author-city a {
+	color: #111;
+}
+
+.guide .guide-author .author-city::before {
+	position: absolute;
+	left: torem(-80px);
+	content: "";
+	width: torem(4px);
+	height: torem(114px);
+	background-color: #e5e5e5; 
+}
+/*作者信息 end*/
+/*出行信息 start*/
+.guide .guide-info {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding: torem(60px) torem(50px);
+	margin: torem(80px) 0;
+	border: torem(4px) solid #e5e5e5;
+}
+
+.guide .guide-info .info-trip {
+	position: absolute;
+	top: torem(-25px);
+	padding: 0 torem(10px);
+	color: #767676;
+	background-color: #fff;
+}
+
+.guide .guide-info span {
+	position: relative;
+	display: inline-block;
+	margin-left: torem(60px);
+	font-size: torem(40px);
+}
+
+.guide .guide-info span::before {
+	position: absolute;
+	left: torem(-60px);
+	width: torem(45px);
+	height: torem(45px);
+	background: url('../images/web/show/notes-sprites.png') no-repeat;
+	background-size: torem(300px) torem(450px);
+	content: "";
+}
+
+.guide .guide-info .time::before {
+	background-position: 0 torem(-255px);
+}
+
+.guide .guide-info .couple {
+	margin-left: torem(124px);
+}
+
+.guide .guide-info .couple::before {
+	background-position: torem(-60px) torem(-255px);
+}
+
+.guide .guide-info .cost {
+	margin-top: torem(45px);
+}
+
+.guide .guide-info .cost::before {
+	background-position: torem(-120px) torem(-255px);
+}
+
+.guide .guide-info .day {
+	margin: torem(45px) 0 0 torem(256px);
+}
+
+.guide .guide-info .day::before {
+	background-position: torem(-180px) torem(-255px);
+}
+/*详细内容 start*/
+.guide .guide-detail .detail-header {
+	margin-bottom: torem(106px);
+	font-size: torem(80px);
+	font-weight: bold; 
+	color: #474747;
+}
+
+.guide .guide-detail .desc img {
+	width: torem(62px);
+	height: torem(62px);
+	vertical-align: middle;
+}
+
+.guide .guide-detail .desc {
+	line-height: 1.5;
+	font-size: torem(51px);
+	color: #474747;
+}
+
+.guide .guide-detail .link {
+	color: #474747;
+} 
+/*视频*/
+.guide .guide-detail video {
+	width: 100%;
+}
+/*图样图森破*/
+.guide .guide-detail .tooyoung {
+	margin: torem(10px) 0 torem(100px) 0;
+	font-size: torem(80px);
+	font-weight: bold;
+	color: #474747;
+}
+/*图片隐藏内容 start*/
+.guide .guide-detail .photo-wrap {
+	width: 100%;	
+}
+
+.guide .guide-detail .photo-wrap img {
+	width: 100%;
+}
+
+.guide .guide-detail .photo-nav {
+	margin: torem(20px) torem(20px) torem(100px); 
+	color: #474747;
+}
+
+.guide .guide-detail .photo-nav .click {
+	float: right;
+	color: #474747;
+}
+
+.guide .guide-detail .nav-left {
+	float: left;
+}
+.guide .guide-detail i {
+	display: inline-block;
+	width: torem(45px);
+	height: torem(45px);
+	vertical-align: middle;
+	background: url('../images/web/show/notes-sprites.png') no-repeat;
+	background-size: torem(300px) torem(450px);
+} 
+
+.guide .guide-detail .nav-left .local {
+	margin-right: torem(10px);
+}
+
+.guide .guide-detail .nav-right {
+	float: right;
+	margin-left: torem(40px);
+} 
+
+.guide .guide-detail .nav-right .love {
+	margin: 0 0 0 torem(20px);
+	background-position: torem(-120px) 0;
+}
+/*段落*/
+.guide .guide-detail .photo-desc {
+	margin-bottom: torem(40px);
+	font-size: torem(51px);
+	color: #474747;
+	line-height: 1.5;
+}
+/*图片隐藏内容 end*/
+/*详细内容 end*/
+/*出行信息 end*/
+/*指南内容 end*/
